@@ -19,8 +19,4 @@ nbdist/
 
 ### Java ###
 *.class
-out/
-!out/.gitkeep  # Optional if you want to keep the folder structure but not track .class
 
-### Output Files ###
-output.txt

@@ -1,0 +1,74 @@
+Reading from file: test.c
+Source code:
+===================================================
+int main() {
+    int x = 42;
+    float y = 3.14;
+    char* name = "Hello World";
+    
+    // if (x > 0) {
+    //     printf("x is positive: %d\n", x);
+    //     return x + y;
+    // } else {
+    //     printf("x is not positive\n");
+    // }
+    
+    // for (int i = 0; i < 10; i++) {
+    //     printf("Count: %d\n", i);
+    // }
+    int x = 5; // This is a single-line comment
+    int y = /* inline comment */ 10;
+    /*
+    * Multi-line comment
+    * spanning multiple lines
+    */
+    int z = x / y; // Division still works!
+    return 0;
+}
+
+===================================================
+
+Tokens:
+Token{type=INT, value='int', line=1, col=1}
+Token{type=IDENTIFIER, value='main', line=1, col=5}
+Token{type=LEFT_PAREN, value='(', line=1, col=9}
+Token{type=RIGHT_PAREN, value=')', line=1, col=10}
+Token{type=LEFT_BRACE, value='{', line=1, col=12}
+Token{type=INT, value='int', line=2, col=6}
+Token{type=IDENTIFIER, value='x', line=2, col=10}
+Token{type=ASSIGN, value='=', line=2, col=12}
+Token{type=NUMBER, value='42', line=2, col=14}
+Token{type=SEMICOLON, value=';', line=2, col=16}
+Token{type=FLOAT, value='float', line=3, col=6}
+Token{type=IDENTIFIER, value='y', line=3, col=12}
+Token{type=ASSIGN, value='=', line=3, col=14}
+Token{type=NUMBER, value='3.14', line=3, col=16}
+Token{type=SEMICOLON, value=';', line=3, col=20}
+Token{type=IDENTIFIER, value='char', line=4, col=6}
+Token{type=MULTIPLY, value='*', line=4, col=10}
+Token{type=IDENTIFIER, value='name', line=4, col=12}
+Token{type=ASSIGN, value='=', line=4, col=17}
+Token{type=STRING, value='Hello World', line=4, col=19}
+Token{type=SEMICOLON, value=';', line=4, col=43}
+Token{type=INT, value='int', line=16, col=6}
+Token{type=IDENTIFIER, value='x', line=16, col=10}
+Token{type=ASSIGN, value='=', line=16, col=12}
+Token{type=NUMBER, value='5', line=16, col=14}
+Token{type=SEMICOLON, value=';', line=16, col=15}
+Token{type=INT, value='int', line=17, col=6}
+Token{type=IDENTIFIER, value='y', line=17, col=10}
+Token{type=ASSIGN, value='=', line=17, col=12}
+Token{type=NUMBER, value='10', line=17, col=35}
+Token{type=SEMICOLON, value=';', line=17, col=37}
+Token{type=INT, value='int', line=22, col=6}
+Token{type=IDENTIFIER, value='z', line=22, col=10}
+Token{type=ASSIGN, value='=', line=22, col=12}
+Token{type=IDENTIFIER, value='x', line=22, col=14}
+Token{type=DIVIDE, value='/', line=22, col=16}
+Token{type=IDENTIFIER, value='y', line=22, col=18}
+Token{type=SEMICOLON, value=';', line=22, col=19}
+Token{type=RETURN, value='return', line=23, col=6}
+Token{type=NUMBER, value='0', line=23, col=13}
+Token{type=SEMICOLON, value=';', line=23, col=14}
+Token{type=RIGHT_BRACE, value='}', line=24, col=2}
+Token{type=EOF, value='', line=25, col=2}
