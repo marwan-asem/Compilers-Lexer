@@ -2,8 +2,25 @@
 
 A Java-based lexical analyzer that tokenizes C source code files. This project implements a complete lexer that can identify and categorize various tokens in C programming language syntax.
 
-## 📋 Table of Contents
+## � Quick Start
 
+```bash
+# Clone the repository
+git clone git@github.com:marwan-asem/Compilers-Lexer.git
+cd Compilers-Lexer
+
+# Compile the project
+javac -d out src/*.java
+
+# Run with the sample file
+java -cp out Main test.c
+```
+
+**Output**: The lexical analysis results will be saved to `output.txt`
+
+## �📋 Table of Contents
+
+- [Quick Start](#quick-start)
 - [Overview](#overview)
 - [Features](#features)
 - [Project Structure](#project-structure)
@@ -69,10 +86,18 @@ lexer/
 
 ### Setup Steps
 
-1. **Clone or download the project**:
+1. **Clone the project**:
    ```bash
-   git clone <repository-url>
-   cd lexer
+   # Using SSH (recommended if you have SSH keys set up)
+   git clone git@github.com:marwan-asem/Compilers-Lexer.git
+   cd Compilers-Lexer
+   ```
+   
+   Or using HTTPS:
+   ```bash
+   # Using HTTPS
+   git clone https://github.com/marwan-asem/Compilers-Lexer.git
+   cd Compilers-Lexer
    ```
 
 2. **Compile the Java source files**:
@@ -82,7 +107,7 @@ lexer/
 
 3. **Verify compilation**:
    ```powershell
-   ls out/
+   dir out\
    # Should show: Main.class, Scanner.class, Token.class, TokenType.class
    ```
 

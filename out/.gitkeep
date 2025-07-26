@@ -1,0 +1,10 @@
+# This file ensures the out/ directory is tracked by Git
+# The out/ directory is needed for compiled Java .class files
+# 
+# Repository: https://github.com/marwan-asem/Compilers-Lexer
+# 
+# To build the project:
+# javac -d out src/*.java
+#
+# To run the project:
+# java -cp out Main test.c

@@ -20,3 +20,7 @@ nbdist/
 ### Java ###
 *.class
 
+# Keep out directory but ignore all contents except .gitkeep
+out/*
+!out/.gitkeep
+
