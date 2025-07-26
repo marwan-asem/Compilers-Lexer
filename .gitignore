@@ -1,0 +1,26 @@
+### IDEs ###
+.vscode/
+.idea/
+.classpath
+.project
+.settings/
+.nb-gradle/
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.springBeans
+.sts4-cache
+.factorypath
+.apt_generated
+
+### OS ###
+.DS_Store
+
+### Java ###
+*.class
+out/
+!out/.gitkeep  # Optional if you want to keep the folder structure but not track .class
+
+### Output Files ###
+output.txt
